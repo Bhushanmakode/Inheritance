@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      {% block title %}
+      <link href="static 'images/python.jpg'" type="image/x-icon" rel="shortcut icon">
+      <title>Title</title>
+      {% endblock %}
+
+  {% include 'cdnlines.html' %}
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<h4 class="text-center text-white bg-success">Welcome to DurgaSoft</h4>
+
+{% include 'navbar.html' %}
+
+{% block content %}
+{% endblock %}
+
+<h3 class="text-center text-white bg-dark">Thank You</h3>
+
+</body>
+</html>
